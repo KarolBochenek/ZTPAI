@@ -27,7 +27,14 @@ Aby uruchomić projekt lokalnie, postępuj zgodnie z poniższymi krokami:
 ## Diagram ERD
 
 ## Widoki
+[login-desktop.pdf](https://github.com/user-attachments/files/18459069/login-desktop.pdf)
+[register-desktop.pdf](https://github.com/user-attachments/files/18459059/register-desktop.pdf)
+[items-desktop.pdf](https://github.com/user-attachments/files/18459065/items-desktop.pdf)
+[add-item-desktop.pdf](https://github.com/user-attachments/files/18459066/add-item-desktop.pdf)
+
 # Mobile
+[login-mobile.pdf](https://github.com/user-attachments/files/18459063/login-mobile.pdf)
+[register-mobile.pdf](https://github.com/user-attachments/files/18459068/register-mobile.pdf)
 
 ## Diagram UML
 
