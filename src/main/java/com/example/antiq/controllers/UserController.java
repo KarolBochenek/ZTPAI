@@ -11,12 +11,12 @@ public class UserController {
 
     private final UserService userService;
 
-    @PostMapping("/register")
+    /*@PostMapping("/register")
     public String registerUser(@RequestParam String firstname,
                                @RequestParam String lastname,
                                @RequestParam String email,
                                @RequestParam String password) {
         userService.createUser(firstname, lastname, email, password);
         return "User registered successfully!";
-    }
+    }*/
 }

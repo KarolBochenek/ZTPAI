@@ -15,15 +15,16 @@ public class UserService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 
-    public void createUser(String firstname, String lastname,String email, String password) {
+    public void createUser(String email, String password) {
         User user = User.builder()
-                .firstname(firstname)
-                .lastname(lastname)
                 .email(email)
                 .password(passwordEncoder.encode(password))
                 .enabled(true)
                 .build();
         userRepository.save(user);
+    }
+    public boolean checkIfEmailExists(String email) {
+        return userRepository.existsByEmail(email);
     }
     public List<User> getAllUsers() {
         return userRepository.findAll();
