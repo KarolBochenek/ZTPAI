@@ -3,13 +3,14 @@ package com.example.antiq.service;
 import com.example.antiq.entity.Book;
 import com.example.antiq.repository.BookRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@RequiredArgsConstructor
 @Service
 public class BookService {
-    private BookRepository bookRepository;
+    private final BookRepository bookRepository;
     public List<Book> getAllBooks(){
         return bookRepository.findAll();
     }

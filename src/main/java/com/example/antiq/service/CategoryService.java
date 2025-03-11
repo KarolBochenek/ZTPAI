@@ -3,14 +3,15 @@ package com.example.antiq.service;
 import com.example.antiq.entity.Category;
 import com.example.antiq.repository.CategoryRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@RequiredArgsConstructor
 @Service
 public class CategoryService {
-    private CategoryRepository categoryRepository;
-    public List<Category> getAllCategorys(){
+    private final CategoryRepository categoryRepository;
+    public List<Category> getAllCategories(){
         return categoryRepository.findAll();
     }
     public Category getCategoryById(int id){
